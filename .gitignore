@@ -1,0 +1,61 @@
+######################## 共通 ########################
+# VS Code設定
+.vscode/
+
+######################## api ########################
+# Compiled class files
+backend/**/*.class
+
+# target
+backend/target/**
+!backend/target/.gitkeep
+
+# Maven
+!.mvn/wrapper/maven-wrapper.jar
+
+# Maven Wrapper
+backend/.mvn/wrapper/maven-wrapper.properties
+
+# Lombok
+backend/.lombok
+
+# static
+backend/src/main/resources/static/**
+!backend/src/main/resources/static/.gitkeep
+
+# test
+backend/src/test/java/scm/shi/skillnav/**
+!backend/src/test/java/scm/shi/skillnav/.gitkeep
+
+backend/HELP.md
+backend/mvnw
+backend/mvnw.cmd
+
+# Log files
+backend/logs/**
+!backend/logs/.gitkeep
+
+# https
+#backend/keystore.p12
+
+######################## web ########################
+# node_modules を管理対象外
+web/node_modules/
+
+# ビルド成果物
+web/dist/**
+web/build/
+
+# coverage results
+web/coverage/**
+
+# unit test results
+web/test-results/**
+
+# 環境変数ファイル
+#.env
+#.env.local
+#.env.test
+#.env.prod
+
+######################## db ########################
