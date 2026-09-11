@@ -12,6 +12,12 @@ import { useI18nStore, type I18nState } from "@/i18n/useI18nStore";
 import { useForm } from "react-hook-form";
 import LanguageSwitcher from "@/components/common/Language-switcher";
 import { useNavigate } from "react-router-dom";
+import LoginService, { type LoginResult } from "../services/login.service";
+import type { ApiResponse } from "@/shared/services/http";
+import { useAuthStore } from "@/shared/state/authStore";
+import { useState } from "react";
+import { Message } from "@/components/common/Message";
+import { useMessageStore } from "@/shared/state/messageStore";
 // import { useEffect } from "react";
 
 type LoginForm = {
@@ -31,13 +37,27 @@ export default function LoginPage() {
         formState: { errors },
     } = useForm<LoginForm>();
 
-    const handlerSubmit = (data: LoginForm) => {
+    const handlerSubmit = async (data: LoginForm) => {
         console.log("提交的数据：", data);
-
-        if (data.username === '111') {
-            localStorage.setItem("token", data.username);
-            navigate("/top")
+        const resp: ApiResponse<LoginResult> = await LoginService.doLogin(data);
+        if (!resp.success) {
+            useMessageStore.getState().showMessage({
+                type: "info",
+                title: "错误",
+                message: resp.errors,
+            });
+            return;
         }
+
+        useAuthStore.getState().login({
+            userId: resp.data?.userId || '',
+            name: resp.data?.name || '',
+        });
+
+        localStorage.setItem("token", data.username);
+        navigate("/top")
+
+
     }
 
     localStorage.getItem("token") == null;

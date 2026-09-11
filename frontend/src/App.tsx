@@ -1,10 +1,14 @@
 import './App.css'
+import { GlobalMessage } from './components/common/GlobalMessage'
 import AppRouter from './router'
 
 function App() {
 
   return (
-    <AppRouter />
+    <>
+      <AppRouter />
+      <GlobalMessage /> {/* 全局挂载 */}
+    </>
   )
 }
 
