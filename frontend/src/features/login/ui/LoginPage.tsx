@@ -111,7 +111,7 @@ export default function LoginPage() {
                         {/* 登录按钮 */}
                         <Button
                             type="submit"
-                            className="w-full h-11 rounded-xl bg-indigo-600 hover:bg-indigo-700 transition-all text-white font-medium shadow-lg hover:shadow-xl"
+                            className="w-full h-11 rounded-xl bg-blue-600 hover:bg-blue-700 transition-all text-white font-medium shadow-lg hover:shadow-xl"
                         >
                             登录
                         </Button>
