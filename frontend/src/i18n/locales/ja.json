@@ -12,5 +12,8 @@
         "description": "本システムは、企業管理者が資格とスキルを管理するための統合プラットフォームです。人材の能力を把握し、情報公開と評価を支援します。",
         "actionsLabel": "業務機能",
         "actions": ["資格管理", "スキル管理", "公開", "評価"]
+    },
+    "skillList": {
+        "systemLabel": "企業人材管理システム", "adminLabel": "管理者", "logout": "ログアウト", "eyebrow": "スキル管理", "title": "スキル一覧", "description": "組織のスキル定義を検索、確認、管理します。", "newButton": "新規", "backButton": "戻る", "searchTitle": "検索条件", "skillName": "スキル名", "skillId": "スキルID", "category": "カテゴリ", "skillNamePlaceholder": "20文字以内", "skillIdPlaceholder": "大文字英字10文字以内", "categoryPlaceholder": "カテゴリを選択", "allCategories": "全カテゴリ", "searchButton": "検索", "searching": "検索中", "resetButton": "リセット", "requiredCondition": "検索条件を入力してください", "categoryLoadError": "カテゴリの取得に失敗しました", "loadError": "スキル一覧の取得に失敗しました", "newSkillMessage": "新規画面は準備中です", "resultTitle": "検索結果", "resultCountSuffix": "件", "resultHint": "列名をクリックして並べ替え", "actionColumn": "操作", "categoryName": "カテゴリ名", "empty": "検索結果がありません", "openAction": "表示", "pageSize": "表示件数", "all": "すべて", "previousPage": "前のページ", "nextPage": "次のページ"
     }
 }

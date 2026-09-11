@@ -25,4 +25,26 @@ export const handlers = [
             user: { id: 1, name: "youmin" },
         });
     }),
+    http.get("/api/skill-cat-list", () => HttpResponse.json([
+        { skillCatId: "TECH", skillCatName: "技术" },
+        { skillCatId: "BIZ", skillCatName: "业务" },
+        { skillCatId: "MGMT", skillCatName: "管理" },
+    ])),
+    http.get("/api/skill-list", ({ request }) => {
+        const url = new URL(request.url);
+        const skillName = url.searchParams.get("skillName")?.toLowerCase() ?? "";
+        const skillId = url.searchParams.get("skillId")?.toUpperCase() ?? "";
+        const skillCatId = url.searchParams.get("skillCatId") ?? "";
+        const skills = [
+            { skillId: "JAVASCRIPT", skillName: "JavaScript开发", skillCatName: "技术", skillCatId: "TECH" },
+            { skillId: "SPRING", skillName: "Spring Boot应用开发", skillCatName: "技术", skillCatId: "TECH" },
+            { skillId: "DESIGN", skillName: "业务流程设计", skillCatName: "业务", skillCatId: "BIZ" },
+            { skillId: "LEADER", skillName: "团队领导力", skillCatName: "管理", skillCatId: "MGMT" },
+        ].filter((skill) => (!skillName || skill.skillName.toLowerCase().includes(skillName)) && (!skillId || skill.skillId.includes(skillId)) && (!skillCatId || skillCatId === "all" || skill.skillCatId === skillCatId));
+        return HttpResponse.json(skills.map((skill) => ({
+            skillId: skill.skillId,
+            skillName: skill.skillName,
+            skillCatName: skill.skillCatName,
+        })));
+    }),
 ];

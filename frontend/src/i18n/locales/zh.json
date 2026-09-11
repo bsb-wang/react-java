@@ -12,5 +12,8 @@
         "description": "本系统是为企业管理员管理资格和技能而设计的统一平台，帮助组织掌握人才能力、公开信息并开展评价。",
         "actionsLabel": "业务功能",
         "actions": ["资格管理", "技能管理", "公开", "评价"]
+    },
+    "skillList": {
+        "systemLabel": "企业人才管理系统", "adminLabel": "管理员", "logout": "退出", "eyebrow": "技能管理", "title": "技能列表", "description": "检索、确认和维护组织中的技能定义。", "newButton": "新规", "backButton": "后退", "searchTitle": "检索条件", "skillName": "技能名", "skillId": "技能ID", "category": "类别", "skillNamePlaceholder": "最多20文字", "skillIdPlaceholder": "最多10个大写英文字母", "categoryPlaceholder": "请选择类别", "allCategories": "全部类别", "searchButton": "检索", "searching": "检索中", "resetButton": "重置", "requiredCondition": "请输入检索条件", "categoryLoadError": "技能类别取得失败", "loadError": "技能列表取得失败", "newSkillMessage": "新规画面尚未开放", "resultTitle": "检索结果", "resultCountSuffix": "件", "resultHint": "可点击列名排序", "actionColumn": "操作", "categoryName": "类型名", "empty": "暂无检索结果", "openAction": "查看", "pageSize": "每页显示", "all": "全部", "previousPage": "上一页", "nextPage": "下一页"
     }
 }

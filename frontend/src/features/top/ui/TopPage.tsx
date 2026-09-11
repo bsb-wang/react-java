@@ -72,6 +72,7 @@ export default function TopPage() {
                                 key={label}
                                 type="button"
                                 variant="outline"
+                                onClick={() => index === 1 && navigate("/top/skill-list")}
                                 className={`group min-h-40 justify-between rounded-2xl border-2 p-6 text-left shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl ${featureColors[index]}`}
                             >
                                 <span className="flex flex-col items-start gap-4">

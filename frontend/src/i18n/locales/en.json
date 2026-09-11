@@ -12,5 +12,8 @@
         "description": "A unified platform for enterprise administrators to manage qualifications and skills, share talent information, and support meaningful evaluations.",
         "actionsLabel": "Business functions",
         "actions": ["Qualifications", "Skills", "Publish", "Evaluation"]
+    },
+    "skillList": {
+        "systemLabel": "Enterprise talent platform", "adminLabel": "Administrator", "logout": "Log out", "eyebrow": "Skill management", "title": "Skill list", "description": "Search, review, and maintain skill definitions for your organization.", "newButton": "New", "backButton": "Back", "searchTitle": "Search criteria", "skillName": "Skill name", "skillId": "Skill ID", "category": "Category", "skillNamePlaceholder": "Up to 20 characters", "skillIdPlaceholder": "Up to 10 uppercase letters", "categoryPlaceholder": "Select a category", "allCategories": "All categories", "searchButton": "Search", "searching": "Searching", "resetButton": "Reset", "requiredCondition": "Enter at least one search criterion", "categoryLoadError": "Failed to load skill categories", "loadError": "Failed to load the skill list", "newSkillMessage": "The new skill screen is not available yet", "resultTitle": "Search results", "resultCountSuffix": " items", "resultHint": "Select a column name to sort", "actionColumn": "Actions", "categoryName": "Type name", "empty": "No search results", "openAction": "View", "pageSize": "Rows per page", "all": "All", "previousPage": "Previous page", "nextPage": "Next page"
     }
 }

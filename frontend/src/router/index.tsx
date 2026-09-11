@@ -6,6 +6,7 @@ import RouteGuard from "./guard";
 import Error404 from "@/components/common/Error404";
 import BookDetail from "@/features/top/ui/BookDetail";
 import { lazy } from "react";
+import SkillListPage from "@/features/skill/ui/SkillListPage";
 
 const BookList = lazy(() => import("@/features/top/ui/BookList"));
 
@@ -31,6 +32,15 @@ export default function AppRouter() {
                 <Route path="book-list" element={<BookList />} />
                 <Route path="book-detail" element={<BookDetail />} />
             </Route>
+
+            <Route
+                path="/top/skill-list"
+                element={
+                    <RouteGuard>
+                        <SkillListPage />
+                    </RouteGuard>
+                }
+            />
 
             {/* 404 页面：所有未匹配的路径 */}
             <Route path="*" element={<Error404 />} />
