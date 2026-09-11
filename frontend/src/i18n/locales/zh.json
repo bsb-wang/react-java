@@ -2,5 +2,15 @@
     "login": {
         "userName": "用户名",
         "password": "密码"
+    },
+    "home": {
+        "systemLabel": "企业人才管理系统",
+        "adminLabel": "管理员",
+        "logout": "退出",
+        "eyebrow": "技能与资格管理",
+        "title": "让每一项能力都清晰可见",
+        "description": "本系统是为企业管理员管理资格和技能而设计的统一平台，帮助组织掌握人才能力、公开信息并开展评价。",
+        "actionsLabel": "业务功能",
+        "actions": ["资格管理", "技能管理", "公开", "评价"]
     }
 }

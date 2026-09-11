@@ -2,5 +2,15 @@
     "login": {
         "userName": "User ID",
         "password": "Password"
+    },
+    "home": {
+        "systemLabel": "Enterprise talent platform",
+        "adminLabel": "Administrator",
+        "logout": "Log out",
+        "eyebrow": "Skills and qualifications",
+        "title": "Make every capability visible",
+        "description": "A unified platform for enterprise administrators to manage qualifications and skills, share talent information, and support meaningful evaluations.",
+        "actionsLabel": "Business functions",
+        "actions": ["Qualifications", "Skills", "Publish", "Evaluation"]
     }
 }
